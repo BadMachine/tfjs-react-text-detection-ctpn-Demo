@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tfjs-react-text-detection-ctpn-Demo/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/tfjs-react-text-detection-ctpn-Demo/static/js/main.0b23d308.chunk.js",
-    "main.js.map": "/tfjs-react-text-detection-ctpn-Demo/static/js/main.0b23d308.chunk.js.map",
+    "main.js": "/tfjs-react-text-detection-ctpn-Demo/static/js/main.738208d4.chunk.js",
+    "main.js.map": "/tfjs-react-text-detection-ctpn-Demo/static/js/main.738208d4.chunk.js.map",
     "runtime-main.js": "/tfjs-react-text-detection-ctpn-Demo/static/js/runtime-main.9638a936.js",
     "runtime-main.js.map": "/tfjs-react-text-detection-ctpn-Demo/static/js/runtime-main.9638a936.js.map",
     "static/js/2.fa9f7de6.chunk.js": "/tfjs-react-text-detection-ctpn-Demo/static/js/2.fa9f7de6.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9638a936.js",
     "static/js/2.fa9f7de6.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.0b23d308.chunk.js"
+    "static/js/main.738208d4.chunk.js"
   ]
 }
