@@ -2,7 +2,6 @@
   "name": "tfjs-react-text-detection-ctpn",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://badmachine.github.io/tfjs-react-text-detection-ctpn-Demo/",
   "dependencies": {
     "@tensorflow/tfjs": "^3.7.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -24,9 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
