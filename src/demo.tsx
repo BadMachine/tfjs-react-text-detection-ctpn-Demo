@@ -26,9 +26,7 @@ export default class Demo extends React.Component{
 			nms_thresh:0.7,
 			min_size: 8,
 		};
-		//this._model = tf.loadGraphModel('https://cdn.jsdelivr.net/gh/BadMachine/tfjs-text-detection-ctpn/ctpn_web/model.json');
 		this._model = new CTPN(this._cfg);
-	    //this.canvas = React.createRef<HTMLCanvasElement | null>();
 	}
 	componentDidMount() {
 		this._canvas = this._canvasRef.current as HTMLCanvasElement;

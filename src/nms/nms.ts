@@ -14,7 +14,7 @@ export async function nms(config: cfg){
 }
 
 function tf_nms(dets: any, scores: any, thresh: number){
-    return tf.image.nonMaxSuppression(dets, ravel(scores) as tf.Tensor1D, 2000, 0.3,thresh);
+    return tf.image.nonMaxSuppression(dets, ravel(scores) as tf.Tensor1D, 2000, 0.2,thresh);
 }
 
 async function authNMS(dets: any, scores: any, thresh: number){
@@ -32,6 +32,7 @@ async function authNMS(dets: any, scores: any, thresh: number){
     //
     // }
     let order = argSort(scores).reverse();//order = scores.argsort()[::-1]
+
     order = ravel(order) as tf.Tensor1D;
     let keep = tf.tensor1d([]);
     while(order.shape[0] > 0){

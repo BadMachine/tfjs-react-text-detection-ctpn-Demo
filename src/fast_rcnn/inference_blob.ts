@@ -33,14 +33,14 @@ function _get_image_blob(im: tf.Tensor3D, cfg: configInterface): [tf.Tensor4D, n
     const im_size_max = Math.max(w,h);
     const processed_ims = [];
     const im_scale_factors = [];
-
     for (let target_size of cfg.SCALES){
         let im_scale = target_size / im_size_min;
         // Prevent the biggest axis from being more than MAX_SIZE
         if (Math.round(im_scale * im_size_max) > cfg.MAX_SIZE){
             im_scale = cfg.MAX_SIZE / im_size_max;
         }
-        im = tf.image.resizeBilinear(im_orig, [w * im_scale, h * im_scale])
+        console.log('==========>', im_orig, [~~(w * im_scale), ~~(h * im_scale)])
+        im = tf.image.resizeBilinear(im_orig, [~~(w * im_scale), ~~(h * im_scale)])
         im_scale_factors.push(im_scale);
         processed_ims.push(im);
     }

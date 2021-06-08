@@ -32,7 +32,6 @@ export default class CTPN{
         tf.engine().startScope()
         const image_swapped = RGB2BGR(tf.browser.fromPixels(image, 3).cast('float32')) as tf.Tensor3D;
         const [img, scale] = resize_im(image_swapped, 600, 1200);
-
         const [blobs, im_scales] = _get_blobs(img as tf.Tensor3D, null, this.cfg);
 
         if (this.cfg.HAS_RPN){
@@ -46,6 +45,7 @@ export default class CTPN{
         const boxes = tf.div(proposals, im_scales[0]); // bixes a bit different
         const textDetector = new TextDetector(this.cfg);
         const _boxes = await textDetector.detect(boxes, scores.reshape([scores.shape[0],1]), img.shape.slice(0,2));
+        _boxes.print();
         return [_boxes, scale];
         tf.engine().endScope()
     }
