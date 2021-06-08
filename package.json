@@ -1,7 +1,8 @@
 {
   "name": "tfjs-react-text-detection-ctpn",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://badmachine.github.io/tfjs-react-text-detection-ctpn-Demo/",
   "dependencies": {
     "@tensorflow/tfjs": "^3.7.0",
     "@testing-library/jest-dom": "^5.11.4",
